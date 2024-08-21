@@ -6,12 +6,17 @@
  @import '_main';
   /* FOOTER */
 @import '_footer';
-
+body{
+   background-color: $white;
+}
 .box{
-   min-height: 100svh;
    width: 100%;
+   min-height: calc(100svh - 88px);   //100svh;
    background-image: url(../img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    // background-position: bottom-left;
+   @include respond-above(sm) {
+      min-height: calc(100svh - 191.4px);//calc(100svh - 88px);   //100svh;
+   }
 }

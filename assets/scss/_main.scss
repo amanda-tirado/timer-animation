@@ -3,9 +3,9 @@
 .main{
     position: relative;
     width: 100%;
-    height: calc(100svh - 72px);
+    height: calc(100svh - 72px);   
     @include respond-above(sm) {
-        height: calc(100svh - 88px);
+        height: calc(100svh - 191.4px);//calc(100svh - 88px);
     }
     &__percentages{
         position: absolute;
@@ -20,19 +20,22 @@
     &__h2{
         width: 100%;
         left: 0;
-        padding: 1rem 0 1rem; //1rem 1rem 1rem;
+        //padding: 1rem 0 1rem; //1rem 1rem 1rem;
         background-color: whitesmoke;
         position: absolute;
         // top: -16%;
-        top: -4.5rem;
+        top: -3.5rem;
         text-align: center;
         color: $primary; //darksalmon;
-        font-size: 1.2rem;
         border-radius: 2rem;
         z-index: 1;
+        padding: 0.5rem 1rem;
+        border-radius: 20px 20px 0 0;
+        font-size: 1rem;
         @include flexible (row, wrap, center, center);
         @include respond-above(sm) {
             top: -2.5rem;
+            font-size: 1.2rem;
             width: fit-content;
             left: calc(50% - 25rem);
             @include flexible(row, nowrap, center, center);
