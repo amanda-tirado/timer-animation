@@ -1,0 +1,29 @@
+@import '_mixins';
+
+.header{
+    &__wrapper{
+        padding: 1rem 0;
+        width: 95%;
+        margin: auto;
+        @include flexible(row, nowrap, space-between, center);
+    }
+    &__img{
+        max-width: 4rem;
+    }
+    &__nav{
+        @include flexible(row, nowrap, center, center);
+    }
+    &__menu{
+        margin-right: 2rem;
+        color:  darkslategray;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    &__span.salmon{
+       color: salmon; 
+    }
+    &__span.space{
+        margin-right: .5rem;
+    }
+
+}

@@ -1,0 +1,84 @@
+@import '_mixins';
+
+.main{
+position: relative;
+height: calc(100svh - 104px);
+width: 100%;
+    &__percentages{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background-color: whitesmoke;
+        padding: 1rem;
+        @include flexible(row, nowrap, center, center);
+    }
+    &__h2{
+        padding: 1rem 1rem 1rem;
+        background-color: whitesmoke;
+        position: absolute;
+        top: -16%;
+        left: calc(50% - 25rem);
+        text-align: center;
+        color: darksalmon;
+        font-size: 1.2rem;
+        border-radius: 2rem;
+        z-index: 1;
+        @include flexible(row, nowrap, center, center);
+    }
+    &__letters{
+        margin-right: 1rem;
+    }
+    &__letters.bck{
+        background-color: #ffffc0;
+        // #F6CD8B
+        padding: .2rem .4rem;
+        border-radius: .4rem;
+    }
+    &__letter.green{
+        color: darkslategray;
+    }
+    &__infos{
+        padding: 1rem;
+        width: 80%;
+        @include flexible(row, nowrap, center, center);
+    }
+    &__info{
+        padding: 1rem;
+        width: 50%;
+        @include flexible(row, nowrap, center, center);
+        // background-color: darkslategray;
+    }
+    &__if{
+        width: 50%;
+        // background-color: darksalmon;
+        @include flexible(column, nowrap, center, center);
+    }
+    &__title{
+        display: block;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        color: darkslategray;
+        text-align: justify;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    &__number{
+        font-size: 4rem;
+    }
+    &__p{
+        width: 100%;
+        font-size: .8rem;
+        color: darksalmon;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 800;
+        // word-break: keep-all;
+    }
+    &__else{
+        width: 50%;
+        padding: 1rem;
+        // background-color: darksalmon;
+        @include flexible(column, nowrap, center, center);
+    }
+}
