@@ -1,9 +1,11 @@
  /* OVERALL */
- @import '_reset', '_mixins';
+ @import '_reset','_vars', '_mixins';
  /* HEADER */
  @import '_header';
  /* HEADER */
  @import '_main';
+  /* FOOTER */
+@import '_footer';
 
 .box{
    min-height: 100svh;
@@ -11,4 +13,5 @@
    background-image: url(../img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
    background-repeat: no-repeat;
    background-size: cover;
+   // background-position: bottom-left;
 }

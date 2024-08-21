@@ -1,30 +1,42 @@
 @import '_mixins';
 
 .main{
-position: relative;
-height: calc(100svh - 104px);
-width: 100%;
+    position: relative;
+    width: 100%;
+    height: calc(100svh - 72px);
+    @include respond-above(sm) {
+        height: calc(100svh - 88px);
+    }
     &__percentages{
         position: absolute;
+        width: 100%;
         bottom: 0;
         left: 0;
         z-index: 2;
         background-color: whitesmoke;
-        padding: 1rem;
+        padding:1rem 1rem 0; // 1rem;
         @include flexible(row, nowrap, center, center);
     }
     &__h2{
-        padding: 1rem 1rem 1rem;
+        width: 100%;
+        left: 0;
+        padding: 1rem 0 1rem; //1rem 1rem 1rem;
         background-color: whitesmoke;
         position: absolute;
-        top: -16%;
-        left: calc(50% - 25rem);
+        // top: -16%;
+        top: -4.5rem;
         text-align: center;
-        color: darksalmon;
+        color: $primary; //darksalmon;
         font-size: 1.2rem;
         border-radius: 2rem;
         z-index: 1;
-        @include flexible(row, nowrap, center, center);
+        @include flexible (row, wrap, center, center);
+        @include respond-above(sm) {
+            top: -2.5rem;
+            width: fit-content;
+            left: calc(50% - 25rem);
+            @include flexible(row, nowrap, center, center);
+        }
     }
     &__letters{
         margin-right: 1rem;
@@ -39,20 +51,30 @@ width: 100%;
         color: darkslategray;
     }
     &__infos{
-        padding: 1rem;
-        width: 80%;
+        padding:1rem 0 0; // 1rem;
+        width: 100%;
         @include flexible(row, nowrap, center, center);
+        gap: 1rem;
+        @include respond-above(sm) {
+            padding: 0;
+        }
     }
     &__info{
-        padding: 1rem;
-        width: 50%;
-        @include flexible(row, nowrap, center, center);
-        // background-color: darkslategray;
+        padding:1rem 0 0; // 1rem;
+        width: 100%;
+        @include flexible(row, wrap, center, center);
+        @include respond-above(sm) {
+            width: 50%;
+            @include flexible(row, nowrap, center, center);
+        }
     }
     &__if{
-        width: 50%;
-        // background-color: darksalmon;
+        width: 100%;
+        // background-color: primary;
         @include flexible(column, nowrap, center, center);
+        @include respond-above(sm) {
+            width: 50%;
+        }
     }
     &__title{
         display: block;
@@ -69,16 +91,18 @@ width: 100%;
     &__p{
         width: 100%;
         font-size: .8rem;
-        color: darksalmon;
+        color: $primary;
         text-transform: uppercase;
         text-align: center;
         font-weight: 800;
         // word-break: keep-all;
     }
     &__else{
-        width: 50%;
-        padding: 1rem;
-        // background-color: darksalmon;
+        padding:1rem 1rem 0; // 1rem;
+        width: 100%;
         @include flexible(column, nowrap, center, center);
+        @include respond-above(sm) {
+            width: 50%;
+        }
     }
 }
