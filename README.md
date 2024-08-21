@@ -1,6 +1,6 @@
 ## Descripción 🏝
 
-Pequeño proyecto para el módulo de Desarrollo Web en Trazos. He realizado un sitio web donde distintos números crecen a la par en distintos tiempos para simular una animación de carga a través de JavaScript en un diseño visual simple.
+Este proyecto muestra animaciones de contadores numéricos en la interfaz, representando diferentes porcentajes de forma visual. Está desarrollado con HTML, CSS y Bootstrap, ofreciendo una presentación moderna y sencilla.
 
 ## Tecnologías ✒️
 Para crear este proyecto he usado:
@@ -20,7 +20,7 @@ Para crear este proyecto he usado:
 * [Porfolio web](http://www.amandatirado.com)
 
 ## Ver ejemplo en vivo 
-- [Ver Demo](https://amandatirado.com/practicas/numero%20creciente/index.html)
+- [Ver Demo](https://amanda-tirado.github.io/timer-animation/)
 
 ## Contratación
 Si quieres contratarme puedes escribirme a amandatiradoanula@gmail.com para consultas.
