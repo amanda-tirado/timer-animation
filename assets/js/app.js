@@ -1,8 +1,11 @@
 'use strict';
 
-function everyNumber(parametro, numeroMaximo, timin ){
+function everyNumber(parametro, numeroMaximo, duration ){
     let nodoNumero = document.querySelector( parametro );
     let count = 0;
+    let timin;
+    const totalDuration = duration; 
+    timin = totalDuration / numeroMaximo;
     
     let ref_timeout = setInterval( function(){
         // Se ejecuta transcurrido X msegundos
@@ -16,14 +19,15 @@ function everyNumber(parametro, numeroMaximo, timin ){
         }
     
     } , timin );// mseg.
+
 }
 // everyNumber('#numeroUno', 56, 60);
 // everyNumber('#numeroDos', 35, 100);
 // everyNumber('#numeroTres', 33, 100);
 // everyNumber('#numeroCuatro', 69, 46);
 
-everyNumber('#numeroUno', 56, (3000 / 56));
-everyNumber('#numeroDos', 35, (3000 / 35));
-everyNumber('#numeroTres', 33, (3000 / 33));
-everyNumber('#numeroCuatro', 69, (3000 / 69));
+everyNumber('#numeroUno', 56, 2000);
+everyNumber('#numeroDos', 35, 2000);
+everyNumber('#numeroTres', 33, 2000);
+everyNumber('#numeroCuatro', 69, 2000);
 
