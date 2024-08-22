@@ -1,4 +1,4 @@
-
+'use strict';
 
 function everyNumber(parametro, numeroMaximo, timin ){
     let nodoNumero = document.querySelector( parametro );
@@ -17,7 +17,13 @@ function everyNumber(parametro, numeroMaximo, timin ){
     
     } , timin );// mseg.
 }
-everyNumber('#numeroUno', 56, 60);
-everyNumber('#numeroDos', 35, 100);
-everyNumber('#numeroTres', 33, 100);
-everyNumber('#numeroCuatro', 69, 46);
+// everyNumber('#numeroUno', 56, 60);
+// everyNumber('#numeroDos', 35, 100);
+// everyNumber('#numeroTres', 33, 100);
+// everyNumber('#numeroCuatro', 69, 46);
+
+everyNumber('#numeroUno', 56, (3000 / 56));
+everyNumber('#numeroDos', 35, (3000 / 35));
+everyNumber('#numeroTres', 33, (3000 / 33));
+everyNumber('#numeroCuatro', 69, (3000 / 69));
+
