@@ -1,6 +1,6 @@
 ## Descripción 🏝
 
-Este proyecto muestra animaciones de contadores numéricos en la interfaz, representando diferentes porcentajes de forma visual. Está desarrollado con HTML, CSS y Bootstrap, ofreciendo una presentación moderna y sencilla.
+Este proyecto muestra cómo animar varios contadores numéricos para que alcancen sus valores máximos simultáneamente. Utilizando JavaScript, se ajustan los intervalos de tiempo para que todos los números crezcan a la misma velocidad y completen su animación en el mismo tiempo total, independientemente de sus valores individuales. La práctica ilustra la sincronización de animaciones mediante el uso de setInterval y el cálculo del intervalo de tiempo necesario para lograr una animación uniforme.
 
 ## Tecnologías ✒️
 Para crear este proyecto he usado:
